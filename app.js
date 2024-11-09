@@ -8,9 +8,10 @@ var box7 = document.getElementById("box7");
 var box8 = document.getElementById("box8");
 var box9 = document.getElementById("box9");
 
+// var count=0
 // var text = document.getElementById("text");
 // var p = document.createElement("p");
-// var pText = document.createTextNode("X Player Turn");
+// var pText = document.createTextNode(`Player 'X' ${count} Turn`);
 // p.appendChild(pText);
 // text.appendChild(p);
 
@@ -22,7 +23,6 @@ function getEle(ele) {
     ele.innerHTML = "X";
     ele.classList.add("disable");
     flag = false;
-
   } else {
     ele.innerHTML = "O";
     ele.classList.add("disable");
@@ -40,7 +40,9 @@ function getEle(ele) {
     (box7.innerHTML == "X" && box5.innerHTML == "X" && box3.innerHTML == "X")
   ) {
     alert("Player X wins");
-  } else if (
+    window.location.href='./congrats.html'
+  }
+   else if (
     (box1.innerHTML == "O" && box2.innerHTML == "O" && box3.innerHTML == "O") ||
     (box4.innerHTML == "O" && box5.innerHTML == "O" && box6.innerHTML == "O") ||
     (box7.innerHTML == "O" && box8.innerHTML == "O" && box9.innerHTML == "O") ||
@@ -51,7 +53,13 @@ function getEle(ele) {
     (box7.innerHTML == "O" && box5.innerHTML == "O" && box3.innerHTML == "O")
   ) {
     alert("Player X wins");
-  } else {
-    // alert('Match tied!')
   }
+}
+
+var btn=document.getElementById('btn')
+function newPlay(){
+  window.location.href='./index.html'
+}
+function laterPlay(){
+  alert('Thanks for visit!')
 }
