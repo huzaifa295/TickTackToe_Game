@@ -18,14 +18,15 @@ var box9 = document.getElementById("box9");
 flag = true;
 
 function getEle(ele) {
-  
   if (flag) {
     ele.innerHTML = "X";
     ele.classList.add("disable");
+    ele.classList.add("color_X");
     flag = false;
   } else {
     ele.innerHTML = "O";
     ele.classList.add("disable");
+    ele.classList.add("color_O");
     flag = true;
   }
 
@@ -40,9 +41,9 @@ function getEle(ele) {
     (box7.innerHTML == "X" && box5.innerHTML == "X" && box3.innerHTML == "X")
   ) {
     alert("Player X wins");
-    window.location.href='./congrats.html'
-  }
-   else if (
+
+    window.location.href = "./congrats.html";
+  } else if (
     (box1.innerHTML == "O" && box2.innerHTML == "O" && box3.innerHTML == "O") ||
     (box4.innerHTML == "O" && box5.innerHTML == "O" && box6.innerHTML == "O") ||
     (box7.innerHTML == "O" && box8.innerHTML == "O" && box9.innerHTML == "O") ||
@@ -52,14 +53,24 @@ function getEle(ele) {
     (box1.innerHTML == "O" && box5.innerHTML == "O" && box9.innerHTML == "O") ||
     (box7.innerHTML == "O" && box5.innerHTML == "O" && box3.innerHTML == "O")
   ) {
-    alert("Player X wins");
+    alert("Player O wins");
+    box1.innerHTML = "";
+    box2.innerHTML = "";
+    box3.innerHTML = "";
+    box4.innerHTML = "";
+    box5.innerHTML = "";
+    box6.innerHTML = "";
+    box7.innerHTML = "";
+    box8.innerHTML = "";
+    box9.innerHTML = "";
+    window.location.href = "./congrats.html";
   }
 }
 
-var btn=document.getElementById('btn')
-function newPlay(){
-  window.location.href='./index.html'
+var btn = document.getElementById("btn");
+function newPlay() {
+  window.location.href = "./index.html";
 }
-function laterPlay(){
-  alert('Thanks for visit!')
+function laterPlay() {
+  alert("Thanks for visit!");
 }

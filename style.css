@@ -70,3 +70,12 @@ h2{
     font-weight: 600;
     color: #ffc107c7;
 }
+.color_X{
+    color: #ffc107c7;
+}
+.color_O{
+    color: #062661;
+}
+.bg{
+    background-color: #780206;
+}

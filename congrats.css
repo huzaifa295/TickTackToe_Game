@@ -12,7 +12,6 @@ body{
     width: 100vw;
     background: rgb(0, 0, 0);
     background-image: url(./assets/images/congratulations-banner-game-ui-awards-red-ribbon-golden-stars-receiving-cartoon-achievement-game-screen-155291159.webp);
-    /* background-size: contain; */
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
